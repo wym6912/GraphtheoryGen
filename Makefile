@@ -5,18 +5,18 @@ OBJECT=main.o Mode_generator.o
 all: main modegen
 
 main: main.o
-        $(CXX) $(CXXFLAGS) $^ -o $@
-        mv $@ graphgen
-        cp graphgen /usr/bin/
+	$(CXX) $(CXXFLAGS) $^ -o $@
+	mv $@ graphgen
+	cp graphgen /usr/bin/
 
 modegen: Mode_generator.o
-        $(CXX) $(CXXFLAGS) $^ -o $@
+	$(CXX) $(CXXFLAGS) $^ -o $@
 
 %*.o: %*.cpp
-        $(CXX) $(CFLAGS) $^ -o $@
+	$(CXX) $(CFLAGS) $^ -o $@
 
 .PHONY:
-        clean
+	clean
 clean:
-        rm -rf $(ALL) $(OBJECT)
-        rm /usr/bin/graphgen
+	rm -rf $(ALL) $(OBJECT)
+	rm /usr/bin/graphgen
