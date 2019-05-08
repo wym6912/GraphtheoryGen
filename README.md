@@ -149,4 +149,4 @@ you will get a PNG file.
 
 ## Third-party 
 
-We use [`INIFile config`](https://github.com/Winnerhust/inifile2) and [`tinyxml2`](https://github.com/leethomason/tinyxml2) .
+We use [`INIFile config`](https://github.com/Winnerhust/inifile2), [`tinyxml2`](https://github.com/leethomason/tinyxml2) and [`convert-svg-to-png`](https://github.com/TheZyppi/convert-svg-to-png).
